@@ -23,12 +23,14 @@ print("[tip: use 5 counting cells for real values]")
 menu_lines()
 time.sleep(1)
 enter = input("[PRESS ENTER TO CONTINUE...]")
-if enter !='':
+
+while enter!='':
+    if enter !='':
                 print("[wrong input, try again]")
                 enter = input('PRESS ENTER TO CONTINUE')
 
-
-if enter =='':
+while enter =='':
+    if enter =='':
                 os.system('clear')
                 menu_lines()
                 print('1.) Using trypan blue and PBS')
